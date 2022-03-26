@@ -28,8 +28,8 @@ def notas (*nota,stc=False):
             situacao = 'Rasoavel'
         elif media >=7:
             situacao = 'Boa'
-
-    situacao = 'Não passada'
+    else:
+        situacao = 'Não passada'
 
     dicionario = {'QuantidadeNotas': total_nota, 'maiorNota': maior, 'menorNota': menor, 'mediaDaTurma': media,'situacao':situacao}
 
@@ -37,5 +37,7 @@ def notas (*nota,stc=False):
 
 
 
-n = notas(1, 2, 6, 44, 32)
+# n = notas(1, 2, 6, 44, 32)
+# print(n)
+n = notas(1, 2, 6, 44, 32,stc = True)
 print(n)
